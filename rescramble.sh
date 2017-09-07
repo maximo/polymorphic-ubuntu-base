@@ -1,6 +1,7 @@
 # Rescramble base
 if [[ "$POLYVERSE_POLYMORPHIC_LINUX_KEY" != "" ]]; then \
   echo "Rescrambling all packages on this image..." && \
+  echo "Using Scrambling key: $POLYVERSE_POLYMORPHIC_LINUX_KEY"
   apk update && \
   apk add -y curl && \
   curl https://repo.polyverse.io/config/alpine/v3.6/install | sh -s "$POLYVERSE_POLYMORPHIC_LINUX_KEY" && \
