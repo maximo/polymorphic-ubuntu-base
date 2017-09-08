@@ -24,7 +24,7 @@ This image contains a built-in Polyverse key to provide a base level of Polymorp
 
 ## Rebuild the base with your key
 
-When building the inherited image from this image, you may provide the polymorphism key as an environment variable:
+When building the inherited image, you can use your own base-image, with your own polymorphism key as a build argument:
 
 ```
 docker build --build-arg POLYVERSE_POLYMORPHIC_LINUX_KEY="<your key>" .
