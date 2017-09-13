@@ -1,3 +1,3 @@
-FROM polyverse/polymorphic-alpine-base
+FROM polyverse/polymorphic-ubuntu-base
 
 CMD /polyverse/rescramble.sh && echo "Rescrambled at runtime"
