@@ -1,21 +1,21 @@
-Polymorphic Alpine Base
+Polymorphic Ubuntu Base
 ========================
 
 # Get Started
 
 In all your Dockerfiles, replace
 ```
-FROM alpine
+FROM ubuntu
 ```
 
 with 
 ```
-FROM polyverse/polymorphic-alpine-base
+FROM polyverse/polymorphic-ubuntu-base
 ```
 
-This Dockerfile generates a Polymorphic Alpine based on Polyverse's Polymorphic Linux repositories.
+This Dockerfile generates a Polymorphic Ubuntu based on Polyverse's Polymorphic Linux repositories.
 
-This Dockerfile may be used as-is, or the generated image may be used as a drop-in replacement for alpine:latest, that rescrambles the base every time you rebuild your inherited container (using the ONBUILD directive.)
+This Dockerfile may be used as-is, or the generated image may be used as a drop-in replacement for ubuntu:latest, that rescrambles the base every time you rebuild your inherited container (using the ONBUILD directive.)
 
 
 # Increasing Dynamic Polymorphism
@@ -37,7 +37,7 @@ The highest benefit you get from Polymorphic Linux is when you rescramble at run
 This would look something like:
 
 ```
-FROM polyverse/polymorphic-alpine-base
+FROM polyverse/polymorphic-ubuntu-base
 
 ...
 
