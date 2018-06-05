@@ -3,7 +3,7 @@ FROM ubuntu
 ADD rescramble.sh /polyverse/
 
 ARG POLYVERSE_POLYMORPHIC_LINUX_KEY
-ENV POLYVERSE_POLYMORPHIC_LINUX_KEY=thmu0inx1dmo56secy0fkzkt9
+ENV POLYVERSE_POLYMORPHIC_LINUX_KEY ${POLYVERSE_POLYMORPHIC_LINUX_KEY:-czcw7pjshny8lzzog8bgiizfr}
 
 # Rescramble base
 RUN /polyverse/rescramble.sh
