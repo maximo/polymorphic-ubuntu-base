@@ -5,7 +5,7 @@ Polymorphic Ubuntu Base
 
 In all your Dockerfiles, replace
 ```
-FROM ubuntu
+FROM ubuntu:16.04
 ```
 
 with 
